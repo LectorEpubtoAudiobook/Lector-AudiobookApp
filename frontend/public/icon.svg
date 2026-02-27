@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#141728"/>
+      <stop offset="100%" stop-color="#0f1117"/>
+    </linearGradient>
+    <linearGradient id="pgL" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7c75f5"/>
+      <stop offset="100%" stop-color="#5b52e0"/>
+    </linearGradient>
+    <linearGradient id="pgR" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6560ee"/>
+      <stop offset="100%" stop-color="#4a42c8"/>
+    </linearGradient>
+    <linearGradient id="hb" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#b8acff"/>
+      <stop offset="100%" stop-color="#6c63ff"/>
+    </linearGradient>
+    <linearGradient id="cup" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#9188ff"/>
+      <stop offset="100%" stop-color="#4a42c8"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="10" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="ds">
+      <feDropShadow dx="0" dy="5" stdDeviation="12" flood-color="#3730a3" flood-opacity="0.55"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="512" height="512" rx="96" fill="url(#bg)"/>
+
+  <!-- Soft ambient glow in centre -->
+  <ellipse cx="256" cy="290" rx="210" ry="150" fill="#6c63ff" opacity="0.06"/>
+
+  <!-- ══ BOOK ══ -->
+  <!-- Left page -->
+  <path d="M 46,276 Q 254,244 256,264 L 256,460 Q 254,474 46,456 Z" fill="url(#pgL)"/>
+  <!-- Right page -->
+  <path d="M 466,276 Q 258,244 256,264 L 256,460 Q 258,474 466,456 Z" fill="url(#pgR)" opacity="0.82"/>
+  <!-- Top-edge highlight (the book "opening") -->
+  <path d="M 46,276 Q 256,244 466,276 Q 256,256 46,276 Z" fill="white" opacity="0.13"/>
+  <!-- Spine -->
+  <rect x="252" y="262" width="8" height="198" rx="4" fill="#0f1117" opacity="0.52"/>
+  <rect x="253" y="262" width="3" height="198" rx="1.5" fill="white" opacity="0.07"/>
+
+  <!-- Left page text lines -->
+  <line x1="80"  y1="308" x2="232" y2="294" stroke="white" stroke-width="9" stroke-linecap="round" opacity="0.52"/>
+  <line x1="80"  y1="333" x2="222" y2="320" stroke="white" stroke-width="9" stroke-linecap="round" opacity="0.36"/>
+  <line x1="80"  y1="358" x2="228" y2="345" stroke="white" stroke-width="9" stroke-linecap="round" opacity="0.36"/>
+  <line x1="80"  y1="383" x2="215" y2="371" stroke="white" stroke-width="9" stroke-linecap="round" opacity="0.25"/>
+  <line x1="80"  y1="408" x2="194" y2="397" stroke="white" stroke-width="9" stroke-linecap="round" opacity="0.16"/>
+  <!-- Right page text lines -->
+  <line x1="280" y1="294" x2="432" y2="308" stroke="white" stroke-width="9" stroke-linecap="round" opacity="0.26"/>
+  <line x1="290" y1="320" x2="432" y2="333" stroke="white" stroke-width="9" stroke-linecap="round" opacity="0.17"/>
+  <line x1="284" y1="345" x2="432" y2="358" stroke="white" stroke-width="9" stroke-linecap="round" opacity="0.17"/>
+
+  <!-- ══ HEADPHONES ══ -->
+
+  <!-- Headband depth shadow -->
+  <path d="M 118,220 Q 256,54 394,220"
+        stroke="#1e1b5e" stroke-width="42" fill="none" stroke-linecap="round"/>
+  <!-- Headband main body -->
+  <path d="M 118,218 Q 256,52 394,218"
+        stroke="url(#hb)" stroke-width="30" fill="none" stroke-linecap="round"/>
+  <!-- Headband top shine -->
+  <path d="M 128,212 Q 256,68 384,212"
+        stroke="white" stroke-width="7" fill="none" stroke-linecap="round" opacity="0.18"/>
+
+  <!-- ── Left ear cup ── -->
+  <!-- Glow halo -->
+  <circle cx="118" cy="220" r="72" fill="#6c63ff" opacity="0.18" filter="url(#glow)"/>
+  <!-- Outer cushion -->
+  <circle cx="118" cy="220" r="64" fill="url(#cup)" filter="url(#ds)"/>
+  <!-- Cushion ring highlight -->
+  <circle cx="118" cy="220" r="64" fill="none" stroke="#c4b5fd" stroke-width="5" opacity="0.32"/>
+  <circle cx="118" cy="220" r="57" fill="none" stroke="#2e2a7a" stroke-width="3" opacity="0.5"/>
+  <!-- Inner housing -->
+  <circle cx="118" cy="220" r="46" fill="#0f1317"/>
+  <!-- Speaker grill (3×3 dot grid) -->
+  <circle cx="103" cy="205" r="4.8" fill="#6c63ff" opacity="0.85"/>
+  <circle cx="118" cy="205" r="4.8" fill="#6c63ff" opacity="0.85"/>
+  <circle cx="133" cy="205" r="4.8" fill="#6c63ff" opacity="0.85"/>
+  <circle cx="103" cy="220" r="4.8" fill="#7c75f5" opacity="0.9"/>
+  <circle cx="118" cy="220" r="7"   fill="#a78bfa"/>
+  <circle cx="133" cy="220" r="4.8" fill="#7c75f5" opacity="0.9"/>
+  <circle cx="103" cy="235" r="4.8" fill="#6c63ff" opacity="0.85"/>
+  <circle cx="118" cy="235" r="4.8" fill="#6c63ff" opacity="0.85"/>
+  <circle cx="133" cy="235" r="4.8" fill="#6c63ff" opacity="0.85"/>
+  <!-- Cup specular highlight -->
+  <ellipse cx="98" cy="202" rx="19" ry="12" fill="white" opacity="0.15" transform="rotate(-22 98 202)"/>
+
+  <!-- ── Right ear cup ── -->
+  <!-- Glow halo -->
+  <circle cx="394" cy="220" r="72" fill="#6c63ff" opacity="0.18" filter="url(#glow)"/>
+  <!-- Outer cushion -->
+  <circle cx="394" cy="220" r="64" fill="url(#cup)" filter="url(#ds)"/>
+  <!-- Cushion ring highlight -->
+  <circle cx="394" cy="220" r="64" fill="none" stroke="#c4b5fd" stroke-width="5" opacity="0.32"/>
+  <circle cx="394" cy="220" r="57" fill="none" stroke="#2e2a7a" stroke-width="3" opacity="0.5"/>
+  <!-- Inner housing -->
+  <circle cx="394" cy="220" r="46" fill="#0f1317"/>
+  <!-- Speaker grill (3×3 dot grid) -->
+  <circle cx="379" cy="205" r="4.8" fill="#6c63ff" opacity="0.85"/>
+  <circle cx="394" cy="205" r="4.8" fill="#6c63ff" opacity="0.85"/>
+  <circle cx="409" cy="205" r="4.8" fill="#6c63ff" opacity="0.85"/>
+  <circle cx="379" cy="220" r="4.8" fill="#7c75f5" opacity="0.9"/>
+  <circle cx="394" cy="220" r="7"   fill="#a78bfa"/>
+  <circle cx="409" cy="220" r="4.8" fill="#7c75f5" opacity="0.9"/>
+  <circle cx="379" cy="235" r="4.8" fill="#6c63ff" opacity="0.85"/>
+  <circle cx="394" cy="235" r="4.8" fill="#6c63ff" opacity="0.85"/>
+  <circle cx="409" cy="235" r="4.8" fill="#6c63ff" opacity="0.85"/>
+  <!-- Cup specular highlight -->
+  <ellipse cx="374" cy="202" rx="19" ry="12" fill="white" opacity="0.15" transform="rotate(-22 374 202)"/>
+</svg>
