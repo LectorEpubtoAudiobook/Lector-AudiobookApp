@@ -209,6 +209,8 @@ If you find Lector useful, consider supporting development:
 - **GitHub Sponsors** — [github.com/sponsors/LectorEpubtoAudiobook](https://github.com/sponsors/LectorEpubtoAudiobook)
 - **Bitcoin** — `bc1qkfxlhc7a5cxekkdsky2gvshhcckgz5wf8zary3`
 
+  ![Bitcoin QR Code](https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=bitcoin:bc1qkfxlhc7a5cxekkdsky2gvshhcckgz5wf8zary3)
+
 ---
 
 ## Contributing
