@@ -14,6 +14,9 @@
 
 Lector is a self-hosted web application that converts EPUB books to high-quality audiobooks using Kokoro TTS and Anthropic Claude for chapter extraction. It includes a built-in audio player, progress tracking, sleep timer, and personal listening stats — all running in Docker.
 
+<img src="frontend/public/example1.png" alt="Lector screenshot 1" width="800" />
+<img src="frontend/public/example2.png" alt="Lector screenshot 2" width="800" />
+
 </div>
 
 ---
